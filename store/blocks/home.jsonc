@@ -3,7 +3,8 @@
     "blocks": [
       "flex-layout.row",
       "info-card#button-right",
-      "info-card#button-left"
+      "info-card#button-left",
+      "shelf"
     ]
   },
   "flex-layout.row": {
@@ -59,6 +60,22 @@
       "callToActionUrl": "/sale/d",
       "textAlignment": "center",
       "blockClass": "metal"
+    }
+  },
+  "shelf": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "category": 1,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Top sellers"
+      }
     }
   }
 }
